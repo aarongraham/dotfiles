@@ -38,7 +38,7 @@ install pwgen
 install sntop
 install mtr
 install s3cmd
-install unra
+install unrar
 install youtube-dl
 
 # Remove outdated versions from the cellar
