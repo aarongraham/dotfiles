@@ -24,28 +24,23 @@ install narwhal
 install vim --override-system-vi
 tap homebrew/dupes
 install homebrew/dupes/grep
-tap josegonzalez/homebrew-php
-install php55
 
-# This formula didn’t work well last time I tried it:
-#install homebrew/dupes/screen
 
-# Install other useful binaries
-install ack
-#install exiv2
+install apg
+install irssi
+install nmap
+install scala
+install wget
+install brew-cask
 install git
-#install imagemagick
-install lynx
 install node
-install pigz
-install rename
-install rhino
-install tree
-install webkit2png
-install zopfli
-
-tap homebrew/versions
-install lua52
+install pwgen
+install sntop
+install mtr
+install s3cmd
+install unra
+install youtube-dl
 
 # Remove outdated versions from the cellar
 cleanup
+
