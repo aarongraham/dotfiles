@@ -1,5 +1,6 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
+# Add homebrew dirs and `~/bin` to the `$PATH`
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH"
+
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh traceroute ping mtr 
 
 # Load the shell dotfiles, and then some:

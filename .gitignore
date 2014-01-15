@@ -16,3 +16,5 @@ Thumbs.db
 .DS_Store?
 
 ehthumbs.db
+
+npm-modules/
