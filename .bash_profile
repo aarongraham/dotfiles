@@ -1,7 +1,7 @@
 # Add homebrew dirs and `~/bin` to the `$PATH`
 export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH"
 
-complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh traceroute ping mtr 
+complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh traceroute ping mtr
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -36,3 +36,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+#start the ssh agent so keyforwarding and other features work
+ssh-add
