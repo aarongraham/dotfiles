@@ -38,4 +38,4 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
 #start the ssh agent so keyforwarding and other features work
-ssh-add
+ssh-add > /dev/null 2>&1
