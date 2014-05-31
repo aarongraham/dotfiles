@@ -130,4 +130,3 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 alias apg='apg -MSNLC -m10'
 alias gm='git commit -m'
 alias gs='git status'
-alias gl='git log'
