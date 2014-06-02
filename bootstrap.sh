@@ -2,13 +2,13 @@
 cd "$(dirname "${BASH_SOURCE}")"
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~
+		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avhi --no-perms . ~
 	source ~/.bash_profile
 }
 
 function dryRun() {
-	rsync --dry-run --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~
+	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
+		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avhni --no-perms . ~
 	source ~/.bash_profile
 }
 
