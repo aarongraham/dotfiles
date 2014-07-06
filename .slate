@@ -1,0 +1,46 @@
+config defaultToCurrentScreen true
+
+# Shows app icons and background apps, spreads icons in the same place.
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+
+bind e:cmd hint ASDFGHJKLQWERTYUIOPCVBN
+
+bind g:cmd grid padding:5 0:6,2 1:8,3
+
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
+##Custom
+alias topmain move screenOriginX;screenOriginY 1868;746
+alias bottommin move screenOriginX;screenOriginY+741 1868;434
+alias topleftmain corner top-left resize:935;897
+alias bottomleftsmall corner bottom-left resize:935;281
+alias centre move screenSizeX/2-707;screenSizeY/2-422 1415;845
+
+
+layout programming 'iTerm':REPEAT ${bottomleftsmall}
+layout programming 'Atom':REPEAT ${righthalf}
+layout programming 'Firefox':REPEAT ${topleftmain}
+bind l:cmd;shift layout programming
+
+bind b:cmd;alt focus 'Firefox'
+bind t:cmd;alt focus 'iTerm'
+bind a:cmd;alt focus 'Atom'
+
+bind 1:cmd ${lefthalf}
+bind 2:cmd ${righthalf}
+bind 3:cmd ${topmain}
+bind 4:cmd ${bottommin}
+bind 0:cmd ${bottomright}
+bind 9:cmd ${bottomleft}
+bind 8:cmd ${topright}
+bind 7:cmd ${topleft}
+bind 5:cmd ${full}
+bind 6:cmd ${centre}
