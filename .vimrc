@@ -89,3 +89,5 @@ if has("autocmd")
         " Treat .json files as .js
         autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
+set background=dark
+colorscheme base16-default

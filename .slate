@@ -7,7 +7,7 @@ config windowHintsSpread true
 
 bind e:cmd hint ASDFGHJKLQWERTYUIOPCVBN
 
-bind g:cmd grid padding:5 0:6,2 1:8,3
+#bind g:cmd grid padding:5 0:6,2 1:8,3
 
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
 alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
@@ -28,7 +28,7 @@ alias centre move screenSizeX/2-707;screenSizeY/2-422 1415;845
 layout programming 'iTerm':REPEAT ${bottomleftsmall}
 layout programming 'Atom':REPEAT ${righthalf}
 layout programming 'Firefox':REPEAT ${topleftmain}
-bind l:cmd;shift layout programming
+bind l:cmd;alt layout programming
 
 bind b:cmd;alt focus 'Firefox'
 bind t:cmd;alt focus 'iTerm'
