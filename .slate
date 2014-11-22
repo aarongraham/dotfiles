@@ -27,7 +27,13 @@ alias centre move screenSizeX/2-707;screenSizeY/2-422 1415;845
 
 layout programming 'iTerm':REPEAT ${bottomleftsmall}
 layout programming 'Atom':REPEAT ${righthalf}
+layout programming 'Sublime Text 2':REPEAT ${righthalf}
 layout programming 'Firefox':REPEAT ${topleftmain}
+layout programming 'FirefoxDeveloperEdition':REPEAT ${topleftmain}
+layout programming 'Google Chrome':REPEAT ${topleftmain}
+
+
+
 bind l:cmd;alt layout programming
 
 bind b:cmd;alt focus 'Firefox'
