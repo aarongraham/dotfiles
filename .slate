@@ -38,15 +38,15 @@ bind l:cmd;alt layout programming
 
 bind b:cmd;alt focus 'Firefox'
 bind t:cmd;alt focus 'iTerm'
-bind a:cmd;alt focus 'Atom'
+bind a:cmd;alt focus 'Sublime Text 2'
 
 bind 1:cmd ${lefthalf}
 bind 2:cmd ${righthalf}
 bind 3:cmd ${topmain}
 bind 4:cmd ${bottommin}
-bind 0:cmd ${bottomright}
-bind 9:cmd ${bottomleft}
-bind 8:cmd ${topright}
-bind 7:cmd ${topleft}
+#bind 0:cmd ${bottomright}
+#bind 9:cmd ${bottomleft}
+#bind 8:cmd ${topright}
+#bind 7:cmd ${topleft}
 bind 5:cmd ${full}
-bind 6:cmd ${centre}
+#bind 6:cmd ${centre}
