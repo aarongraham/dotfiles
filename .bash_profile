@@ -42,5 +42,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+export VAGRANT_HOME=/VMS/VagrantBoxes
+
 #start the ssh agent so keyforwarding and other features work
 ssh-add > /dev/null 2>&1
