@@ -37,9 +37,9 @@ for option in autocd globstar; do
         shopt -s "$option" 2> /dev/null
 done
 
-Add bash completion, needs bash-completion to be installed from homebrew
+# Add bash completion, needs bash-completion to be installed from homebrew
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  $(brew --prefix)/etc/bash_completion
+  . $(brew --prefix)/etc/bash_completion
 fi
 
 #start the ssh agent so keyforwarding and other features work
