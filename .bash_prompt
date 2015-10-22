@@ -1,11 +1,4 @@
-__git_ps1 ()
-{
-    local b="$(git symbolic-ref HEAD 2>/dev/null)";
-    if [ -n "$b" ]; then
-      printf " (%s)" "${b##refs/heads/}";
-    fi
-}
+export GITAWAREPROMPT=~/code/git-aware-prompt
+source "${GITAWAREPROMPT}/main.sh"
 
-
-PS1='\n[\u@\h]: \w$(__git_ps1 " (%s)")\n$?> '
-
+PS1='\n[\u@\h]: \w $git_branch$git_dirty \n$?> '
