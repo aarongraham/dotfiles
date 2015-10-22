@@ -5,6 +5,9 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export PYENV_ROOT="${HOME}/.pyenv"
 
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 if [ -d "${PYENV_ROOT}" ]; then
     export PATH="${PYENV_ROOT}/bin:${PATH}"
     eval "$(pyenv init -)"
